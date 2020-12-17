@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A318086258BC369003A787E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A318085258BC369003A787E /* User.swift */; };
+		9A31808E258BC3CF003A787E /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A31808D258BC3CF003A787E /* Tools.swift */; };
+		9A318094258BC426003A787E /* ToolsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A318093258BC426003A787E /* ToolsMockData.swift */; };
 		9AB82EB7258A5B1E007E8745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */; };
 		9AB82EB9258A5B1E007E8745 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */; };
 		9AB82EBB258A5B1E007E8745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EBA258A5B1E007E8745 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A318085258BC369003A787E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9A31808D258BC3CF003A787E /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		9A318093258BC426003A787E /* ToolsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsMockData.swift; sourceTree = "<group>"; };
 		9AB82EB3258A5B1E007E8745 /* MedTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A318084258BC35A003A787E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A318085258BC369003A787E /* User.swift */,
+				9A31808D258BC3CF003A787E /* Tools.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A318092258BC413003A787E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9A318093258BC426003A787E /* ToolsMockData.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		9A3180A2258BC60C003A787E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9A3180A5258BC625003A787E /* Login */,
+				9A3180A4258BC61F003A787E /* Account */,
+				9A3180A3258BC616003A787E /* Dashboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9A3180A3258BC616003A787E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		9A3180A4258BC61F003A787E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9A3180A5258BC625003A787E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		9AB82EAA258A5B1D007E8745 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +153,9 @@
 		9AB82EB5258A5B1E007E8745 /* MedTools */ = {
 			isa = PBXGroup;
 			children = (
+				9A318092258BC413003A787E /* Mock */,
+				9A318084258BC35A003A787E /* Models */,
+				9A3180A2258BC60C003A787E /* Scenes */,
 				9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */,
 				9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */,
 				9AB82EBA258A5B1E007E8745 /* ViewController.swift */,
@@ -258,9 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A318086258BC369003A787E /* User.swift in Sources */,
 				9AB82EBB258A5B1E007E8745 /* ViewController.swift in Sources */,
 				9AB82EB7258A5B1E007E8745 /* AppDelegate.swift in Sources */,
 				9AB82EB9258A5B1E007E8745 /* SceneDelegate.swift in Sources */,
+				9A31808E258BC3CF003A787E /* Tools.swift in Sources */,
+				9A318094258BC426003A787E /* ToolsMockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
