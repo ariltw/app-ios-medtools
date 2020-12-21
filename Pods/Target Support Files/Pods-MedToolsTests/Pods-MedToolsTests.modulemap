@@ -1,0 +1,6 @@
+framework module Pods_MedToolsTests {
+  umbrella header "Pods-MedToolsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

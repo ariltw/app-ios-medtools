@@ -39,12 +39,55 @@
             </objects>
             <point key="canvasLocation" x="132" y="817"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="faF-5g-aKi">
+            <objects>
+                <viewController id="fhx-aW-HmW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zzE-Zh-3wL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dvh-5T-Lxx">
+                                <rect key="frame" x="40" y="436" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2P-7P-828">
+                                <rect key="frame" x="40" y="480" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIr-ga-1yQ">
+                                <rect key="frame" x="20" y="534" width="374" height="30"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X1o-1U-2ks"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z2P-7P-828" firstAttribute="top" secondItem="dvh-5T-Lxx" secondAttribute="bottom" constant="10" id="2NW-8N-tB3"/>
+                            <constraint firstItem="z2P-7P-828" firstAttribute="leading" secondItem="X1o-1U-2ks" secondAttribute="leading" constant="40" id="476-s1-4RL"/>
+                            <constraint firstItem="dvh-5T-Lxx" firstAttribute="centerY" secondItem="X1o-1U-2ks" secondAttribute="centerY" id="JcO-lR-R5k"/>
+                            <constraint firstItem="X1o-1U-2ks" firstAttribute="trailing" secondItem="z2P-7P-828" secondAttribute="trailing" constant="40" id="ZHk-88-YIi"/>
+                            <constraint firstItem="dvh-5T-Lxx" firstAttribute="leading" secondItem="X1o-1U-2ks" secondAttribute="leading" constant="40" id="hFq-dx-0Va"/>
+                            <constraint firstItem="X1o-1U-2ks" firstAttribute="trailing" secondItem="dvh-5T-Lxx" secondAttribute="trailing" constant="40" id="nBW-jt-syv"/>
+                            <constraint firstItem="kIr-ga-1yQ" firstAttribute="leading" secondItem="X1o-1U-2ks" secondAttribute="leading" constant="20" id="nUC-RM-qVa"/>
+                            <constraint firstItem="X1o-1U-2ks" firstAttribute="trailing" secondItem="kIr-ga-1yQ" secondAttribute="trailing" constant="20" id="vDf-4s-Oyy"/>
+                            <constraint firstItem="kIr-ga-1yQ" firstAttribute="top" secondItem="z2P-7P-828" secondAttribute="bottom" constant="20" id="xrE-63-rcQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqk-Ki-HoX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="100"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cnR-Vz-Vd9">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Bo6-BR-yqZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ytD-F1-Qjf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
