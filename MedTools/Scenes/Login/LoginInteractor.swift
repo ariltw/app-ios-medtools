@@ -26,7 +26,6 @@ class LoginInteractor: LoginBusinessLogic {
             return
         }
         
-        
         worker.authentication(email: email, password: password) { [self] (result) in
             switch result {
             case .success(let response):

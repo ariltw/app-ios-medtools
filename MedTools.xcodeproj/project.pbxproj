@@ -31,6 +31,11 @@
 		9A4F2FFB2590931000EA1955 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FF62590931000EA1955 /* EmailValidator.swift */; };
 		9A4F2FFC2590931000EA1955 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FF72590931000EA1955 /* PasswordValidator.swift */; };
 		9A4F30172590982D00EA1955 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F30162590982D00EA1955 /* StringExtension.swift */; };
+		9A4F30252590B00200EA1955 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F30242590B00200EA1955 /* AccountVC.swift */; };
+		9A4F302A2590B01200EA1955 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F30292590B01200EA1955 /* AccountInteractor.swift */; };
+		9A4F30302590B01E00EA1955 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F302F2590B01E00EA1955 /* AccountPresenter.swift */; };
+		9A4F30392590B04F00EA1955 /* AccountModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F30382590B04F00EA1955 /* AccountModels.swift */; };
+		9A4F30412590B18F00EA1955 /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F30402590B18F00EA1955 /* AccountRouter.swift */; };
 		9AB82EB7258A5B1E007E8745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */; };
 		9AB82EB9258A5B1E007E8745 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */; };
 		9AB82EBE258A5B1E007E8745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB82EBC258A5B1E007E8745 /* Main.storyboard */; };
@@ -91,6 +96,11 @@
 		9A4F2FF62590931000EA1955 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		9A4F2FF72590931000EA1955 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		9A4F30162590982D00EA1955 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		9A4F30242590B00200EA1955 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		9A4F30292590B01200EA1955 /* AccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
+		9A4F302F2590B01E00EA1955 /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		9A4F30382590B04F00EA1955 /* AccountModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModels.swift; sourceTree = "<group>"; };
+		9A4F30402590B18F00EA1955 /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
 		9AB82EB3258A5B1E007E8745 /* MedTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +234,11 @@
 		9A3180A4258BC61F003A787E /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				9A4F30292590B01200EA1955 /* AccountInteractor.swift */,
+				9A4F30382590B04F00EA1955 /* AccountModels.swift */,
+				9A4F302F2590B01E00EA1955 /* AccountPresenter.swift */,
+				9A4F30402590B18F00EA1955 /* AccountRouter.swift */,
+				9A4F30242590B00200EA1955 /* AccountVC.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -594,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A318086258BC369003A787E /* User.swift in Sources */,
+				9A4F30252590B00200EA1955 /* AccountVC.swift in Sources */,
 				9A3180D4258BCFF7003A787E /* DashboardVC.swift in Sources */,
 				9AB82EB7258A5B1E007E8745 /* AppDelegate.swift in Sources */,
 				9A3180D9258BD07A003A787E /* ImageBannerView.swift in Sources */,
@@ -605,9 +621,12 @@
 				9A4F2FE925908F0900EA1955 /* LoginInteractor.swift in Sources */,
 				9A4F2FFB2590931000EA1955 /* EmailValidator.swift in Sources */,
 				9A1A3ECF259086C400767B71 /* UserDefaultStorage.swift in Sources */,
+				9A4F30302590B01E00EA1955 /* AccountPresenter.swift in Sources */,
 				9A4F2FE125908EFE00EA1955 /* LoginPresenter.swift in Sources */,
+				9A4F30392590B04F00EA1955 /* AccountModels.swift in Sources */,
 				9A4F2FD825908EED00EA1955 /* LoginModels.swift in Sources */,
 				9A4F2FF92590931000EA1955 /* Validator.swift in Sources */,
+				9A4F302A2590B01200EA1955 /* AccountInteractor.swift in Sources */,
 				9AB82EB9258A5B1E007E8745 /* SceneDelegate.swift in Sources */,
 				9A31808E258BC3CF003A787E /* Tools.swift in Sources */,
 				9A4F2FEE25908F1400EA1955 /* LoginRouter.swift in Sources */,
@@ -617,6 +636,7 @@
 				9A3180F9258BD49F003A787E /* MockWorker.swift in Sources */,
 				9A1A3E9825906A6400767B71 /* BaseError.swift in Sources */,
 				9A4F2FD325908E1C00EA1955 /* LoginVC.swift in Sources */,
+				9A4F30412590B18F00EA1955 /* AccountRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
