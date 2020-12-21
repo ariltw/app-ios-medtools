@@ -57,7 +57,7 @@ class DashboardVC: UIViewController, DashboardDisplayLogic {
             self.data = viewModel.tools
             toolsTableView.reloadData()
         case .failure(let error):
-            break;
+            Alert.showErrorDialog(on: self, with: error as! BaseError)
         }
     }
 }

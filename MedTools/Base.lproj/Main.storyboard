@@ -11,7 +11,7 @@
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DashboardVC" customModule="MedTools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardVC" id="BYZ-38-t0r" customClass="DashboardVC" customModule="MedTools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="132" y="817"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="faF-5g-aKi">
             <objects>
-                <viewController id="fhx-aW-HmW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="fhx-aW-HmW" customClass="LoginVC" customModule="MedTools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zzE-Zh-3wL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,11 +55,14 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2P-7P-828">
                                 <rect key="frame" x="40" y="480" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIr-ga-1yQ">
                                 <rect key="frame" x="20" y="534" width="374" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginOnClick:" destination="fhx-aW-HmW" eventType="touchUpInside" id="azG-H0-cKG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X1o-1U-2ks"/>
@@ -76,6 +79,10 @@
                             <constraint firstItem="kIr-ga-1yQ" firstAttribute="top" secondItem="z2P-7P-828" secondAttribute="bottom" constant="20" id="xrE-63-rcQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="dvh-5T-Lxx" id="LdH-fb-8Lr"/>
+                        <outlet property="passwordTextField" destination="z2P-7P-828" id="jh1-20-qTS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqk-Ki-HoX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +91,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="cnR-Vz-Vd9">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Bo6-BR-yqZ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Bo6-BR-yqZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ytD-F1-Qjf">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

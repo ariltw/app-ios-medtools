@@ -10,7 +10,7 @@ import Foundation
 protocol MockWorkerType {
     func dashboardTools(completion: @escaping (Result<Dashboard.Response, Error>) -> Void)
     func userAccount()
-    func authentication(email: String, password: String)
+    func authentication(email: String, password: String, completion: @escaping (Result<Login.Auth.Response, Error>) -> Void)
 }
 
 class MockWorker: MockWorkerType {
@@ -35,7 +35,8 @@ class MockWorker: MockWorkerType {
         
     }
     
-    func authentication(email: String, password: String) {
-        
+    func authentication(email: String, password: String, completion: @escaping (Result<Login.Auth.Response, Error>) -> Void) {
+        let mock = User(email: email, password: password)
+        completion(.success(Login.Auth.Response(user: mock)))
     }
 }

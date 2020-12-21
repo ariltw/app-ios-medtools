@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2202D57335C5DD34CCDE2FA0 /* Pods_MedToolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8886B95C146EE9CF7824FFBD /* Pods_MedToolsTests.framework */; };
+		9A1A3E9225906A0F00767B71 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A3E9125906A0F00767B71 /* Alert.swift */; };
+		9A1A3E9825906A6400767B71 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A3E9725906A6400767B71 /* BaseError.swift */; };
+		9A1A3ECF259086C400767B71 /* UserDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A3ECE259086C400767B71 /* UserDefaultStorage.swift */; };
 		9A318086258BC369003A787E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A318085258BC369003A787E /* User.swift */; };
 		9A31808E258BC3CF003A787E /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A31808D258BC3CF003A787E /* Tools.swift */; };
 		9A318094258BC426003A787E /* ToolsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A318093258BC426003A787E /* ToolsMockData.swift */; };
@@ -18,9 +21,18 @@
 		9A3180E3258BD2C4003A787E /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3180E2258BD2C4003A787E /* DashboardInteractor.swift */; };
 		9A3180EB258BD2D2003A787E /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3180EA258BD2D2003A787E /* DashboardPresenter.swift */; };
 		9A3180F9258BD49F003A787E /* MockWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3180F8258BD49F003A787E /* MockWorker.swift */; };
+		9A4F2FD325908E1C00EA1955 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FD225908E1C00EA1955 /* LoginVC.swift */; };
+		9A4F2FD825908EED00EA1955 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FD725908EED00EA1955 /* LoginModels.swift */; };
+		9A4F2FE125908EFE00EA1955 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FE025908EFE00EA1955 /* LoginPresenter.swift */; };
+		9A4F2FE925908F0900EA1955 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FE825908F0900EA1955 /* LoginInteractor.swift */; };
+		9A4F2FEE25908F1400EA1955 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FED25908F1400EA1955 /* LoginRouter.swift */; };
+		9A4F2FF92590931000EA1955 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FF32590931000EA1955 /* Validator.swift */; };
+		9A4F2FFA2590931000EA1955 /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FF42590931000EA1955 /* ValidatorFactory.swift */; };
+		9A4F2FFB2590931000EA1955 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FF62590931000EA1955 /* EmailValidator.swift */; };
+		9A4F2FFC2590931000EA1955 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F2FF72590931000EA1955 /* PasswordValidator.swift */; };
+		9A4F30172590982D00EA1955 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F30162590982D00EA1955 /* StringExtension.swift */; };
 		9AB82EB7258A5B1E007E8745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */; };
 		9AB82EB9258A5B1E007E8745 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */; };
-		9AB82EBB258A5B1E007E8745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB82EBA258A5B1E007E8745 /* ViewController.swift */; };
 		9AB82EBE258A5B1E007E8745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB82EBC258A5B1E007E8745 /* Main.storyboard */; };
 		9AB82EC0258A5B22007E8745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB82EBF258A5B22007E8745 /* Assets.xcassets */; };
 		9AB82EC3258A5B22007E8745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB82EC1258A5B22007E8745 /* LaunchScreen.storyboard */; };
@@ -56,6 +68,9 @@
 		8886B95C146EE9CF7824FFBD /* Pods_MedToolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedToolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88932A644C7180821D01C0EF /* Pods_MedTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BE17604BBA2FC86E76FE3 /* Pods-MedTools-MedToolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTools-MedToolsUITests.debug.xcconfig"; path = "Target Support Files/Pods-MedTools-MedToolsUITests/Pods-MedTools-MedToolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1A3E9125906A0F00767B71 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		9A1A3E9725906A6400767B71 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		9A1A3ECE259086C400767B71 /* UserDefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultStorage.swift; sourceTree = "<group>"; };
 		9A318085258BC369003A787E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9A31808D258BC3CF003A787E /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		9A318093258BC426003A787E /* ToolsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsMockData.swift; sourceTree = "<group>"; };
@@ -66,10 +81,19 @@
 		9A3180E2258BD2C4003A787E /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
 		9A3180EA258BD2D2003A787E /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
 		9A3180F8258BD49F003A787E /* MockWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorker.swift; sourceTree = "<group>"; };
+		9A4F2FD225908E1C00EA1955 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		9A4F2FD725908EED00EA1955 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		9A4F2FE025908EFE00EA1955 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9A4F2FE825908F0900EA1955 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9A4F2FED25908F1400EA1955 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		9A4F2FF32590931000EA1955 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		9A4F2FF42590931000EA1955 /* ValidatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorFactory.swift; sourceTree = "<group>"; };
+		9A4F2FF62590931000EA1955 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		9A4F2FF72590931000EA1955 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		9A4F30162590982D00EA1955 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		9AB82EB3258A5B1E007E8745 /* MedTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AB82EBA258A5B1E007E8745 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AB82EBD258A5B1E007E8745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB82EBF258A5B22007E8745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB82EC2258A5B22007E8745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,8 +155,31 @@
 				39F1284FEEA9F54451208270 /* Pods-MedToolsTests.debug.xcconfig */,
 				2E773EC54ED4F81DBD8A62D5 /* Pods-MedToolsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A1A3E9025906A0300767B71 /* UIElement */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A3E9125906A0F00767B71 /* Alert.swift */,
+			);
+			path = UIElement;
+			sourceTree = "<group>";
+		};
+		9A1A3E9625906A5200767B71 /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A3E9725906A6400767B71 /* BaseError.swift */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		9A1A3ECD259086B200767B71 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A3ECE259086C400767B71 /* UserDefaultStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		9A318084258BC35A003A787E /* Models */ = {
@@ -184,6 +231,11 @@
 		9A3180A5258BC625003A787E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				9A4F2FE825908F0900EA1955 /* LoginInteractor.swift */,
+				9A4F2FD725908EED00EA1955 /* LoginModels.swift */,
+				9A4F2FE025908EFE00EA1955 /* LoginPresenter.swift */,
+				9A4F2FED25908F1400EA1955 /* LoginRouter.swift */,
+				9A4F2FD225908E1C00EA1955 /* LoginVC.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -191,7 +243,11 @@
 		9A3180C3258BCE1F003A787E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9A996F2F258C8F550097BBA3 /* AlertDialog */,
+				9A4F30152590982100EA1955 /* Extension */,
+				9A1A3E9625906A5200767B71 /* BaseModule */,
+				9A1A3ECD259086B200767B71 /* Storage */,
+				9A1A3E9025906A0300767B71 /* UIElement */,
+				9A4F2FF22590931000EA1955 /* Validation */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -213,11 +269,31 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		9A996F2F258C8F550097BBA3 /* AlertDialog */ = {
+		9A4F2FF22590931000EA1955 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				9A4F2FF52590931000EA1955 /* ValidatorType */,
+				9A4F2FF32590931000EA1955 /* Validator.swift */,
+				9A4F2FF42590931000EA1955 /* ValidatorFactory.swift */,
 			);
-			path = AlertDialog;
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		9A4F2FF52590931000EA1955 /* ValidatorType */ = {
+			isa = PBXGroup;
+			children = (
+				9A4F2FF62590931000EA1955 /* EmailValidator.swift */,
+				9A4F2FF72590931000EA1955 /* PasswordValidator.swift */,
+			);
+			path = ValidatorType;
+			sourceTree = "<group>";
+		};
+		9A4F30152590982100EA1955 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A4F30162590982D00EA1955 /* StringExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		9AB82EAA258A5B1D007E8745 = {
@@ -252,7 +328,6 @@
 				9A3180A2258BC60C003A787E /* Scenes */,
 				9AB82EB6258A5B1E007E8745 /* AppDelegate.swift */,
 				9AB82EB8258A5B1E007E8745 /* SceneDelegate.swift */,
-				9AB82EBA258A5B1E007E8745 /* ViewController.swift */,
 				9AB82EBC258A5B1E007E8745 /* Main.storyboard */,
 				9AB82EBF258A5B22007E8745 /* Assets.xcassets */,
 				9AB82EC1258A5B22007E8745 /* LaunchScreen.storyboard */,
@@ -519,17 +594,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A318086258BC369003A787E /* User.swift in Sources */,
-				9AB82EBB258A5B1E007E8745 /* ViewController.swift in Sources */,
 				9A3180D4258BCFF7003A787E /* DashboardVC.swift in Sources */,
 				9AB82EB7258A5B1E007E8745 /* AppDelegate.swift in Sources */,
 				9A3180D9258BD07A003A787E /* ImageBannerView.swift in Sources */,
+				9A1A3E9225906A0F00767B71 /* Alert.swift in Sources */,
 				9A3180E3258BD2C4003A787E /* DashboardInteractor.swift in Sources */,
+				9A4F2FFC2590931000EA1955 /* PasswordValidator.swift in Sources */,
 				9A3180EB258BD2D2003A787E /* DashboardPresenter.swift in Sources */,
 				9A3180DE258BD218003A787E /* DashboardModels.swift in Sources */,
+				9A4F2FE925908F0900EA1955 /* LoginInteractor.swift in Sources */,
+				9A4F2FFB2590931000EA1955 /* EmailValidator.swift in Sources */,
+				9A1A3ECF259086C400767B71 /* UserDefaultStorage.swift in Sources */,
+				9A4F2FE125908EFE00EA1955 /* LoginPresenter.swift in Sources */,
+				9A4F2FD825908EED00EA1955 /* LoginModels.swift in Sources */,
+				9A4F2FF92590931000EA1955 /* Validator.swift in Sources */,
 				9AB82EB9258A5B1E007E8745 /* SceneDelegate.swift in Sources */,
 				9A31808E258BC3CF003A787E /* Tools.swift in Sources */,
+				9A4F2FEE25908F1400EA1955 /* LoginRouter.swift in Sources */,
+				9A4F2FFA2590931000EA1955 /* ValidatorFactory.swift in Sources */,
 				9A318094258BC426003A787E /* ToolsMockData.swift in Sources */,
+				9A4F30172590982D00EA1955 /* StringExtension.swift in Sources */,
 				9A3180F9258BD49F003A787E /* MockWorker.swift in Sources */,
+				9A1A3E9825906A6400767B71 /* BaseError.swift in Sources */,
+				9A4F2FD325908E1C00EA1955 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,7 +805,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -740,7 +827,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
