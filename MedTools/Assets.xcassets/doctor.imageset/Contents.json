@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "d22c35ff94c1c135c9da2bea24e8a0d7-covid-19-doctor-character-icon-by-vexels.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
